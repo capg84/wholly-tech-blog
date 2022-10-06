@@ -1,0 +1,33 @@
+{
+  "name": "wholly-tech-blog",
+  "version": "1.0.0",
+  "description": "A simple blog, purely for the tech people, where one can publish articles, blog posts and thoughts and opinions",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capg84/wholly-tech-blog.git"
+  },
+  "author": "capg84",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/capg84/wholly-tech-blog/issues"
+  },
+  "homepage": "https://github.com/capg84/wholly-tech-blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3",
+    "prettier": "^2.7.1",
+    "sequelize": "^6.24.0"
+  }
+}
