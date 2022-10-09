@@ -1,0 +1,37 @@
+[
+  {
+    "username": "Cyprian",
+    "userFirstName": "Cyprian",
+    "userLastName": "Gomes",
+    "email": "cyprian.gomes@live.co.uk",
+    "password": "P@ssword12345"
+  },
+  {
+    "username": "Tazzy",
+    "userFirstName": "Philomena",
+    "userLastName": "Tazzy",
+    "email": "tazz_2011@yahoo.com",
+    "password": "P@ssword12345"
+  },
+  {
+    "username": "Gentech",
+    "userFirstName": "Tech",
+    "userLastName": "Genius",
+    "email": "tech@genius.com",
+    "password": "P@ssword12345"
+  },
+  {
+    "username": "Aldrin",
+    "userFirstName": "Aldrin",
+    "userLastName": "Partho",
+    "email": "chatwithmith@yahoo.com",
+    "password": "P@ssword12345"
+  },
+  {
+    "username": "Bgsoft",
+    "userFirstName": "Bill",
+    "userLastName": "Gates",
+    "email": "bill.gates@microsoft.com",
+    "password": "P@ssword12345"
+  }
+]
