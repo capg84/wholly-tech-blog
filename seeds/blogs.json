@@ -1,0 +1,20 @@
+[
+  {
+    "blog_title": "2022 Tech Trend",
+    "description": "The COVID-19 pandemic has completely changed the global business environment, which eventually is directing the tech trend.",
+    "blog_create_date": "01/06/2022",
+    "user_id": 1
+  },
+  {
+    "blog_title": "Tech learning demand",
+    "description": "The demand of tech learning has increased significantly over the last couple of years.",
+    "blog_create_date": "25/06/2022",
+    "user_id": 3
+  },
+  {
+    "blog_title": "Best full-stack bootcamp in 2022",
+    "description": "The demand for full-stack bootcamp is currently very high. As there are a lot of free resources available on the internet, therefore it is hard to decide which one is the best.",
+    "blog_create_date": "20/07/2022",
+    "user_id": 2
+  }
+]
