@@ -1,0 +1,44 @@
+<section class="user-post border border-primary border-3">
+  <div class="post-header">
+    <input
+      type="hidden"
+      id="user_id"
+      name="user_id"
+      value="{{comments.user.id}}"
+    />
+    <input
+      type="hidden"
+      id="blog_id"
+      name="blog_id"
+      value="{{comments.blog_id}}"
+    />
+    <h4>
+      Posted by:
+      <span id="blog-name">{{comments.user.username}}</span>
+      on
+      <span id="blog-date">{{comments.date_created}}</span>
+    </h4>
+  </div>
+
+  <div class="post-text">
+    <textarea class="input-text form-control" id="comment-text" type="text">
+      {{comments.comment}}</textarea>
+  </div>
+
+  <div class="comment-lower">
+    <a
+      id="update"
+      class="btn btn-primary new-blog-el"
+      role="button"
+      value="{{comments.id}}"
+    >Update Comment</a>
+    <a
+      id="delete"
+      class="btn btn-warning new-blog-el"
+      role="button"
+      value="{{comments.id}}"
+    >Delete Comment</a>
+  </div>
+</section>
+
+<script src="/js/comment.js"></script>

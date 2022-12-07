@@ -1,0 +1,30 @@
+{{#each blogs as |blog|}}
+  <section class="user-post border border-primary border-3">
+    <div class="post-header">
+      <input type="hidden" id="blog_id" name="blog_id" value="{{blog.id}}" />
+      <h3>
+        <a
+          href="/api/comment/{{blog.id}}"
+          class="nounderline"
+        >{{blog.title}}</a>
+      </h3>
+      <h4>
+        Posted by:
+        <span id="blog-name">{{blog.user.username}}</span>
+        on
+        <span id="blog-date">{{format_date blog.date_created}}</span>
+      </h4>
+    </div>
+
+    <div class="post-text">
+      <p id="blog-text">{{blog.blog}}</p>
+    </div>
+
+    <div class="comment-lower">
+      <a id="commentBtn" class="btn btn-primary new-blog-el" role="button">Add
+        Comment</a>
+    </div>
+  </section>
+{{/each}}
+
+<script src="/js/comments.js"></script>

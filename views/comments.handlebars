@@ -1,0 +1,32 @@
+{{#each comments}}
+  <section class="comment border border-3 border-primary">
+    <div class="comment-header">
+      <input
+        type="hidden"
+        id="comment_id"
+        name="comment_id"
+        value="{{blog_id}}"
+      />
+      <h3>
+        Comment by:
+        <span value="{{user.id}}" id="comment-name">{{user.username}}</span>
+        on
+        <span id="comment-date">{{date_created}}</span>
+      </h3>
+    </div>
+
+    <div class="comment-text">
+      <p id="comment-text">{{comment}}</p>
+    </div>
+    <div class="comment-lower">
+      <a
+        id="update"
+        class="btn btn-primary new-blog-el"
+        role="button"
+        href="/api/comment/edit/{{id}}"
+      >Edit Comment</a>
+    </div>
+  </section>
+{{/each}}
+
+<script src="/js/comments.js"></script>

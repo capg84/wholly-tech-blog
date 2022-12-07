@@ -83,7 +83,7 @@ const deleteComment = async () => {
 };
 
 const commentBtn = document
-  .getElementById("make-comment")
+  .getElementById("commentBtn")
   .addEventListener("click", comment);
 
 const deleteBtn = document
@@ -95,5 +95,5 @@ const updateBtn = document
   .addEventListener("click", updateComment);
 
 const newComment = document
-  .getElementById("save-comment-button")
+  .getElementById("add-comment-btn")
   .addEventListener("click", newCommentFunction);

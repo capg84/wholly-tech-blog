@@ -70,6 +70,7 @@
 
 .navbar {
   margin: auto;
+  width: 80%;
 }
 
 .navbar-btn {
@@ -79,7 +80,8 @@
 }
 
 .blog,
-.user-post {
+.user-post,
+.comment {
   width: 50%;
   height: fit-content;
   border: solid 10px;
@@ -106,18 +108,22 @@
   margin: 5px;
 }
 
-.blog-textarea {
+.blog-textarea,
+.input-text {
   width: 300%;
   height: 300px;
 }
 
-.title {
-  width: 300%;
+.nounderline {
+  text-decoration: none !important;
+  color: black;
 }
+
 .post-header {
   margin: 0 !important;
   padding: 0 !important;
 }
+
 #blog-title {
   width: 300%;
   height: fit-content;
