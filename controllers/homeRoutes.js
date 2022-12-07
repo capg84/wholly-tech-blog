@@ -13,7 +13,7 @@ router.get("/sign-up", async (req, res) => {
 // Rendering sign-up sign-in prompt
 router.get("/signinSignup", async (req, res) => {
   try {
-    res.render("signPrompt");
+    res.render("loginprompt");
   } catch (err) {
     res.status(500).json(err);
   }
