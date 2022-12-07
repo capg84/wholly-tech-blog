@@ -5,7 +5,7 @@ const signIn = async (event) => {
   const password = document.getElementById("passsword").value.trim();
 
   if (email && password) {
-    const response = await fetch("/api/sign-in", {
+    const response = await fetch("/api/signin", {
       method: "POST",
       body: JSON.stringify({
         email: email,
