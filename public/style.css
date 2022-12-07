@@ -6,6 +6,19 @@
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+.sign-up {
+  width: 50%;
+  height: 400px;
+  border: solid 1px;
+  border-radius: 10px;
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
 .loginPrompt {
   width: 50%;
   height: 200px;
@@ -30,4 +43,27 @@
 
 .loginPromptBtns {
   margin: 15px;
+}
+
+.sign-in {
+  width: 50%;
+  height: 350px;
+  border: solid 10px;
+  border-radius: 10px;
+  margin: auto;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.sign-in-input {
+  width: 65%;
+}
+
+.sign-in-input-el,
+.form-el {
+  margin: 10px;
+  padding: 10px;
 }
