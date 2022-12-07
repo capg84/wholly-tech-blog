@@ -1,11 +1,11 @@
 <section class="user-post border border-primary border-3">
   <div class="post-header">
-    <input type="hidden" id="blog_id" name="blog_id" value="{{blogs.id}}" />
+    <input type="hidden" id="blog_id" name="blog_id" value="{{blog.id}}" />
     <h4>
       Posted by:
-      <span id="blog-name">{{blogs.user.username}}</span>
+      <span id="blog-name">{{blog.user.username}}</span>
       on
-      <span id="blog-date">{{blogs.date_created}}</span>
+      <span id="blog-date">{{blog.blog_create_date}}</span>
     </h4>
   </div>
 
@@ -14,13 +14,13 @@
       class="input-title form-control new-blog-el"
       id="blog-title"
       type="text"
-      value="{{blogs.title}}"
+      value="{{blog.blog_title}}"
     />
     <textarea
       class="blog-textarea form-control new-blog-el"
       id="blog-text"
       type="text"
-      value="{{blogs.blog}}"
+      value="{{blog.description}}"
     ></textarea>
   </div>
 

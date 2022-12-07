@@ -56,7 +56,7 @@ router.delete("/delete/:id", auth, async (req, res) => {
 router.get("/edit/:id", async (req, res) => {
   try {
     const comments = await Comment.findByPk(req.params.id, {
-      attributes: ["id", "comment", "date_created", "blog_id"],
+      attributes: ["id", "comment", "comment_create_date", "blog_id"],
       include: [
         { model: User, attributes: ["id", "username"] },
         { model: Blog, attributes: ["id"] },
@@ -81,7 +81,7 @@ router.get("/:id", async (req, res) => {
         blog_id: req.params.id,
       },
 
-      attributes: ["id", "comment", "date_created", "blog_id"],
+      attributes: ["id", "comment", "comment_create_date", "blog_id"],
       include: [
         { model: User, attributes: ["id", "username"] },
         { model: Blog, attributes: ["id"] },

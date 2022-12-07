@@ -11,13 +11,13 @@
         <a
           href="/api/blogs/edit-blog/{{blog.id}}"
           class="nounderline"
-        >{{blog.title}}</a>
+        >{{blog.blog_title}}</a>
       </h3>
       <h4>
         Posted by:
         <span id="blog-name">{{blog.user.username}}</span>
         on
-        <span id="blog-date">{{format_date blog.date_created}}</span>
+        <span id="blog-date">{{format_date blog.blog_create_date}}</span>
       </h4>
     </div>
   </section>

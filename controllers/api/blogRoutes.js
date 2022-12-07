@@ -10,7 +10,13 @@ router.get("/dashboard", auth, async (req, res) => {
         user_id: req.session.user_id,
       },
 
-      attributes: ["id", "title", "blog", "date_created", "user_id"],
+      attributes: [
+        "id",
+        "blog_title",
+        "description",
+        "blog_create_date",
+        "user_id",
+      ],
       include: [{ model: User, attributes: ["username"] }],
     });
 
@@ -42,7 +48,13 @@ router.post("/new-blog", auth, async (req, res) => {
 router.get("/edit-blog/:id", auth, async (req, res) => {
   try {
     const blogs = await Blog.findByPk(req.params.id, {
-      attributes: ["id", "title", "blog", "date_created", "user_id"],
+      attributes: [
+        "id",
+        "blog_title",
+        "description",
+        "blog_create_date",
+        "user_id",
+      ],
       include: [{ model: User, attributes: ["username"] }],
     });
 
@@ -60,8 +72,8 @@ router.put("/update-blog/:id", auth, async (req, res) => {
   try {
     const blog = await Blog.update(
       {
-        title: req.body.title,
-        blog: req.body.blog,
+        title: req.body.blog_title,
+        blog: req.body.description,
         user_id: req.session.user_id,
       },
       { where: { id: req.params.id } }
