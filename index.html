@@ -56,6 +56,37 @@
     <hr />
     <!-- main body to be rendered -->
     <main>
+      <!-- dashboard -->
+      <div class="new-button-div">
+        <a id="save-blog-btn" class="btn btn-primary new-blog-el" role="button"
+          >Add a Blog</a
+        >
+      </div>
+
+      <!-- {{#each blogs as |blog|}} -->
+      <section class="user-post border border-primary border-3">
+        <div id="dashboard-blogs" class="post-header">
+          <input
+            type="hidden"
+            id="blog_id"
+            name="blog_id"
+            value="{{blog.id}}"
+          />
+          <h3>
+            <a href="/api/blogs/edit-blog/{{blog.id}}" class="nounderline"
+              >{{blog.title}}</a
+            >
+          </h3>
+          <h4>
+            Posted by:
+            <span id="blog-name">{{blog.user.username}}</span>
+            on
+            <span id="blog-date">{{format_date blog.date_created}}</span>
+          </h4>
+        </div>
+      </section>
+      <!-- {{/each}} -->
+      <hr />
       <!-- sign-up form -->
       <section class="sign-up border border-primary border-3">
         <div class="sign-up-title">
