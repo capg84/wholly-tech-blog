@@ -2,7 +2,7 @@ const router = require("express").Router();
 const { Blog, User } = require("../models");
 
 // Rendering sign-up page
-router.get("/sign-up", async (req, res) => {
+router.get("/signup", async (req, res) => {
   try {
     res.render("signup");
   } catch (err) {
@@ -20,7 +20,7 @@ router.get("/signinSignup", async (req, res) => {
 });
 
 // Rendering sign-in page
-router.get("/sign-in", async (req, res) => {
+router.get("/signin", async (req, res) => {
   try {
     res.render("signin");
   } catch (err) {
