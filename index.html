@@ -159,6 +159,86 @@
           >
         </div>
       </section>
+
+      <hr />
+
+      <!-- new blog -->
+      <section class="blog border border-primary border-3">
+        <div class="blog-title">
+          <h2>Add a new blog</h2>
+        </div>
+        <hr />
+        <div class="blog-text">
+          <input
+            id="blog-title "
+            class="title form-control new-blog-el"
+            type="text"
+            placeholder="Blog title"
+          />
+          <textarea
+            class="blog-textarea form-control new-blog-el"
+            id="blog-input"
+            type="text"
+            placeholder="Write a new blog"
+          ></textarea>
+          <a
+            id="save-blog-button"
+            class="btn btn-primary new-blog-el"
+            role="button"
+            >Save Blog</a
+          >
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- edit blog -->
+      <section class="user-post border border-primary border-3">
+        <div class="post-header">
+          <input
+            type="hidden"
+            id="blog_id"
+            name="blog_id"
+            value="{{blogs.id}}"
+          />
+          <h4>
+            Posted by:
+            <span id="blog-name">{{blogs.user.username}}</span>
+            on
+            <span id="blog-date">{{blogs.date_created}}</span>
+          </h4>
+        </div>
+
+        <div class="post-text">
+          <input
+            class="input-title form-control new-blog-el"
+            id="blog-title"
+            type="text"
+            value="{{blogs.title}}"
+          />
+          <textarea
+            class="blog-textarea form-control new-blog-el"
+            id="blog-text"
+            type="text"
+            value="{{blogs.blog}}"
+          ></textarea>
+        </div>
+
+        <div class="comment-lower">
+          <a
+            id="update-comment"
+            class="btn btn-primary new-blog-el"
+            role="button"
+            >Update</a
+          >
+          <a
+            id="Delete-comment"
+            class="btn btn-warning new-blog-el"
+            role="button"
+            >Delete</a
+          >
+        </div>
+      </section>
     </main>
     <hr />
 
