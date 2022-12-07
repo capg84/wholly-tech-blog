@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-const signUpRoutes = require("./signUpRoutes");
+const signUpRoutes = require("./signupRoutes");
 const signinRoutes = require("./signinRoutes");
 const signoutRoutes = require("./signoutRoutes");
 const blogRoutes = require("./blogRoutes");

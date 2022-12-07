@@ -1,36 +1,36 @@
 [
   {
     "username": "Cyprian",
-    "userFirstName": "Cyprian",
-    "userLastName": "Gomes",
+    "firstName": "Cyprian",
+    "lastName": "Gomes",
     "email": "cyprian.gomes@live.co.uk",
     "password": "P@ssword12345"
   },
   {
     "username": "Tazzy",
-    "userFirstName": "Philomena",
-    "userLastName": "Tazzy",
+    "firstName": "Philomena",
+    "lastName": "Tazzy",
     "email": "tazz_2011@yahoo.com",
     "password": "P@ssword12345"
   },
   {
     "username": "Gentech",
-    "userFirstName": "Tech",
-    "userLastName": "Genius",
+    "firstName": "Tech",
+    "lastName": "Genius",
     "email": "tech@genius.com",
     "password": "P@ssword12345"
   },
   {
     "username": "Aldrin",
-    "userFirstName": "Aldrin",
-    "userLastName": "Partho",
+    "firstName": "Aldrin",
+    "lastName": "Partho",
     "email": "chatwithmith@yahoo.com",
     "password": "P@ssword12345"
   },
   {
     "username": "Bgsoft",
-    "userFirstName": "Bill",
-    "userLastName": "Gates",
+    "firstName": "Bill",
+    "lastName": "Gates",
     "email": "bill.gates@microsoft.com",
     "password": "P@ssword12345"
   }
