@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en-gb">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,11 +21,12 @@
       <h3><a href="/">Home</a></h3>
       <h3><a href="/api/blogs/dashboard">Dashboard</a></h3>
       {{#if logged_in}}
-      <h3 id="logout" href="/api/logout">Logout</h3>
+        <h3 id="logout" href="/api/logout">Logout</h3>
       {{else}}
-      <h3><a href="/login">Login</a></h3>
+        <h3><a href="/login">Login</a></h3>
+      {{/if}}
     </div>
-    <main>{{{ body }}}</main>
+    <main>{{{body}}}</main>
     <footer>
       <p>Wholly Tech Blog</p>
     </footer>

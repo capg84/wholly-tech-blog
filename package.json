@@ -19,6 +19,7 @@
   "homepage": "https://github.com/capg84/wholly-tech-blog#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "bootstrap": "^5.2.3",
     "connect-session-sequelize": "^7.1.5",
     "dotenv": "^16.0.3",
     "eslint": "^8.24.0",
