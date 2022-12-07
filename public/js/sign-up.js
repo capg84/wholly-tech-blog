@@ -14,7 +14,7 @@ const signUp = async () => {
   if (password === passwordConfirm) {
     document.getElementById("submitBtn").disabled = false;
   } else {
-    alert("Yours passwords do not match");
+    alert("Entered passwords do not match");
   }
 
   const response = await fetch(`/api/sign-up`, {
