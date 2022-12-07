@@ -32,14 +32,20 @@ router.get("/signin", async (req, res) => {
 router.get("/", async (req, res) => {
   try {
     const blogs = await Blog.findAll({
-      attributes: ["id", "title", "blog", "date_created", "user_id"],
+      attributes: [
+        "id",
+        "blog_title",
+        "description",
+        "blog_create_date",
+        "user_id",
+      ],
       include: [{ model: User, attributes: ["username"] }],
     });
 
     const blogsSerialized = blogs.map((blog) => blog.get({ plain: true }));
     const obj = { blogs: blogsSerialized, logged_in: req.session.logged_in };
 
-    res.render("saved-blogs", obj);
+    res.render("saved-blog-comment", obj);
   } catch (err) {
     res.status(500).json(err);
   }
