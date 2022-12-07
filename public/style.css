@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-weight: lighter;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -66,4 +66,14 @@
 .form-el {
   margin: 10px;
   padding: 10px;
+}
+
+.navbar {
+  margin: auto;
+}
+
+.navbar-btn {
+  display: flex;
+  flex-direction: row;
+  height: 66px;
 }

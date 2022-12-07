@@ -14,17 +14,45 @@
     <link rel="stylesheet" href="./public/style.css" />
   </head>
   <body>
-    <div class="header">
-      <h1>Wholly Tech Blog</h1>
-    </div>
     <div class="navbar">
-      <h3><a href="/">Home</a></h3>
-      <h3><a href="/api/blogs/dashboard">Dashboard</a></h3>
-      <!-- {{#if logged_in}} -->
-      <h3 id="logout" href="/api/logout">Logout</h3>
-      <!-- {{else}} -->
-      <h3><a href="/login">Login</a></h3>
+      <div class="header">
+        <h1>Wholly Tech Blog</h1>
+      </div>
+      <div class="navbar-btn">
+        <h3>
+          <a href="/" class="btn btn-primary sign-in-input-el" role="button"
+            >Home</a
+          >
+        </h3>
+        <h3>
+          <a
+            href="/api/blogs/dashboard"
+            class="btn btn-primary sign-in-input-el"
+            role="button"
+            >Dashboard</a
+          >
+        </h3>
+        <!-- {{#if logged_in}} -->
+        <h3
+          id="logout"
+          href="/api/logout"
+          class="btn btn-primary sign-in-input-el"
+          role="button"
+        >
+          Logout
+        </h3>
+        <!-- {{else}} -->
+        <h3>
+          <a
+            href="/login"
+            class="btn btn-primary sign-in-input-el"
+            role="button"
+            >Login</a
+          >
+        </h3>
+      </div>
     </div>
+    <hr />
     <!-- main body to be rendered -->
     <main>
       <!-- sign-up form -->
