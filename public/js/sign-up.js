@@ -17,7 +17,7 @@ const signUp = async () => {
     alert("Entered passwords do not match");
   }
 
-  const response = await fetch(`/api/sign-up`, {
+  const response = await fetch(`/api/signup`, {
     method: "POST",
     body: JSON.stringify({
       firstName: firstName,
